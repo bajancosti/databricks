@@ -30,7 +30,7 @@ def query_df(query: str, params=None) -> pd.DataFrame:
             cols = [d[0] for d in cur.description] if cur.description else []
     return pd.DataFrame(rows, columns=cols)
 
-st.title("Databricks App — Day 2: Read + Filter + Details")
+st.title("Databricks App - Testing")
 
 # Load lookup values
 ref_category = query_df("SELECT category FROM workspace.app_demo.ref_category ORDER BY category")
